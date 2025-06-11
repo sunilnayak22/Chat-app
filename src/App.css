@@ -80,14 +80,14 @@ button {
 }
 @media (max-width: 768px) {
   .chat-box {
-    width: 400px;
+    width: 330px;
   }
   .messages {
     height: 700px;
   }
   .input-box {
     flex-direction: column;
-    width: 400px;
+    width: 330px;
   }
   input {
     margin-bottom: 0.5rem;
