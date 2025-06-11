@@ -2,8 +2,15 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #be13dd;
-background: -webkit-linear-gradient(0deg, #be13dd 0%, #be582d 100%);
+ background:
+      conic-gradient(at 50% calc(100%/6),#474bff 60deg,#0000 0),
+      conic-gradient(at calc(100%/6) 50%,#0000 240deg,#474bff 0),
+      conic-gradient(from 180deg at calc(100%/6) calc(500%/6),#474bff 60deg,#0000 0),
+      conic-gradient(from 180deg at calc(500%/6),#0000 240deg,#474bff 0) calc(4*.866*16px) 0,
+      repeating-linear-gradient(-150deg,#adafff 0 calc(100%/6),#0000   0 50%),
+      repeating-linear-gradient(-30deg, #fff 0 calc(100%/6),#47d3ff 0 50%);
+background-size: calc(6*.866*16px) calc(3*16px);
+
 }
 
 .App {
@@ -32,9 +39,12 @@ header {
 .messages {
   height: 400px;
   overflow-y: auto;
-  background-image: url("./assets/gumballl.jpg");
+  background: rgba(126,194,184,0.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(126,194,184,0.25);
   border: 1px solid #000000;
-  border-radius: 12px;
+  border-radius: 25px;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -106,8 +116,6 @@ button {
     margin-bottom: 0.5rem;
   }
   body{
-    background: #be13dd;
-    background: -webkit-linear-gradient(0deg, #be13dd 0%, #be582d 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +148,6 @@ button {
     margin-bottom: 0.5rem;
   }
   body{
-    background: #be13dd;
-    background: -webkit-linear-gradient(0deg, #be13dd 0%, #be582d 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,10 +157,19 @@ button {
   .footer {
     text-align: center;
     padding: 1rem;
-    background: rgba(255,255,255,0.8);
-    position: fixed;
-    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     bottom: 0;
     left: 0;
     font-size: 1rem;
+    margin-top: 30px;
+  color: #ffffff;
+  border-radius: 12px; 
+  position: relative;
+}
+.title{
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  background-color: #000000;
+  border-radius: 15px;
+  padding:2px 8px;
 }

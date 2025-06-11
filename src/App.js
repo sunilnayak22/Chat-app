@@ -48,7 +48,15 @@ function App() {
 
       {user && (
         <div className="chat-box">
+          <div className="title">
+            <h2>Welcome, {user.displayName}!</h2>
+            <p>Chat with others in real-time.</p>
+          </div>
           <div className="messages">
+            <p>
+              <strong>Chat Messages:</strong>
+
+            </p>
             {messages.map((msg, idx) => (
               <div
                 key={idx}
