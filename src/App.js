@@ -72,7 +72,7 @@ function App() {
       )}
       <> <footer className="footer">
             <p>
-                © {new Date().getFullYear()} Weather App.Made by sunilnayak.
+                © {new Date().getFullYear()} Chat App.Made by sunilnayak.
             </p>
         </footer></>
     </div>
