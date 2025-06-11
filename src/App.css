@@ -79,19 +79,21 @@ button {
   border: none;
 }
 @media (max-width: 768px) {
-  .chat-container {
-    width: 100%;
-    padding: 0.5rem;
+  .chat-box {
+    width: 400px;
   }
   .messages {
-    height: 300px;
+    height: 700px;
   }
   .input-box {
     flex-direction: column;
+    width: 400px;
   }
   input {
-    width: 100%;
     margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 8px 0px;
+    margin: 0;
   }
   button {
     width: 100%;
