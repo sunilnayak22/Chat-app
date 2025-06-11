@@ -70,6 +70,11 @@ function App() {
           </div>
         </div>
       )}
+      <> <footer className="footer">
+            <p>
+                © {new Date().getFullYear()} Weather App.Made by sunilnayak.
+            </p>
+        </footer></>
     </div>
   );
 }
